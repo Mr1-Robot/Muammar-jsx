@@ -1,5 +1,5 @@
 .contact {
-  padding: 8rem 4.5rem 0.2rem;
+  padding: 8rem 4.5rem 0.5rem;
 
   background: linear-gradient(
     93deg,
@@ -64,7 +64,7 @@
 /* 1024 px  */
 @media (max-width: 1024px) {
   .contact {
-    padding: 8rem 2rem 0.2rem;
+    padding: 8rem 2rem 0.5rem;
   }
 }
 
@@ -79,6 +79,6 @@
 /* 500 px  */
 @media (max-width: 500px) {
   .contact {
-    padding: 8rem 1rem 0.2rem;
+    padding: 8rem 1rem 0.5rem;
   }
 }
