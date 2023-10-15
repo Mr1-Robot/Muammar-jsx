@@ -55,7 +55,7 @@ const Hero = () => {
             <div className={classes.actions}>
               <div className={classes.buttons}>
                 <PrimaryButton link="contact">Contact Me</PrimaryButton>
-                <SecondaryButton link="https://drive.google.com/file/d/1V1oKI9MYlKIs0prB__EFjiJ5vHuE7eiV/view?usp=drive_link">
+                <SecondaryButton link="https://drive.google.com/file/d/1n-DJZjl7JhPPPu4I3x_ZOOtJufBF1JDn/view?usp=drive_link">
                   See Resume
                 </SecondaryButton>
               </div>
