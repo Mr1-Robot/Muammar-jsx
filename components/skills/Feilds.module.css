@@ -1,0 +1,35 @@
+.feilds {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.feilds .role {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.role .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* MEDIA QUERIES  */
+
+/* 1024 px  */
+@media (max-width: 1024px) {
+  .feilds {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+
+/* 500 px */
+@media (max-width: 500px) {
+  .feilds {
+    gap: 4rem;
+  }
+}

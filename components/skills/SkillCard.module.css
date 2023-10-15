@@ -1,0 +1,45 @@
+.card {
+  border: 1px solid var(--black-500);
+  border-radius: 0.4rem;
+
+  padding: 0.2rem;
+
+  transition: border 0.2s ease;
+}
+.card:hover {
+  border: 1px solid var(--black-400);
+}
+
+.card .cardContent {
+  background: var(--black-600);
+  border-radius: 0.2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+
+  padding: 0.5rem;
+}
+.card:hover .cardContent {
+  background: linear-gradient(
+    268deg,
+    rgba(255, 255, 255, 0) -33.86%,
+    rgba(243, 243, 243, 0.15) 100%
+  );
+}
+
+.cardContent header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.cardContent header h3 {
+  font-weight: 500;
+  color: var(--black-100);
+}
+
+.cardContent header p {
+  color: var(--black-300);
+}

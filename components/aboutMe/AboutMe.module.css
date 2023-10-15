@@ -1,0 +1,39 @@
+.aboutMe {
+  padding: 0 4.5rem 4rem;
+
+  background: linear-gradient(
+    143deg,
+    rgba(255, 255, 255, 0) 25.93%,
+    rgba(243, 243, 243, 0.11) 83.85%
+  );
+  border-bottom: 1px solid var(--black-500);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6rem;
+}
+
+/* MEDIA QUERIES */
+
+/* 1024 px  */
+@media (max-width: 1024px) {
+  .aboutMe {
+    padding: 0 2rem 4rem;
+  }
+}
+
+/* 800 px  */
+@media (max-width: 800px) {
+}
+
+/* 500 px  */
+@media (max-width: 500px) {
+  .aboutMe {
+    padding: 0 1rem 4rem;
+  }
+}

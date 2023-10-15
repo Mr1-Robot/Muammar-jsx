@@ -1,0 +1,15 @@
+.image {
+  width: 100%;
+  height: auto;
+
+  margin: 10rem 0;
+}
+
+/* MEDIA QUERIES */
+
+/* 500 px  */
+@media (max-width: 500px) {
+  .image {
+    margin: 8rem 0;
+  }
+}

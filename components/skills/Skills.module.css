@@ -1,0 +1,32 @@
+.skills {
+  padding: 0 4.5rem;
+}
+
+.skills figure {
+  text-align: center;
+}
+
+.skills figure img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  width: 100%;
+}
+
+/* MEDIA QUERIES */
+
+/* 1024 px */
+@media (max-width: 1024px) {
+  .skills {
+    padding: 0 2rem;
+  }
+}
+
+/* 500 px */
+@media (max-width: 500px) {
+  .skills {
+    padding: 0 1rem;
+  }
+}

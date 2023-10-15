@@ -1,0 +1,27 @@
+.education {
+  padding: 0 4.5rem;
+}
+
+.education .content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* MEDIA QUERIES  */
+
+/* 1024 px */
+@media (max-width: 1024px) {
+  .education {
+    padding: 0 2rem;
+  }
+}
+
+/* 800 px  */
+@media (max-width: 800px) {
+  .education {
+    padding: 0 1rem;
+  }
+}

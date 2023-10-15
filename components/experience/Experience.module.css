@@ -1,0 +1,53 @@
+.experience {
+  padding: 0 4.5rem 4rem;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(243, 243, 243, 0.11) 140.52%
+  );
+
+  border-bottom: 1px solid var(--black-500);
+
+  overflow: hidden;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+
+  width: 100%;
+}
+
+/* MEDAI QEURIES  */
+
+/* 1024 px  */
+@media (max-width: 1024px) {
+  .experience {
+    padding: 0 2rem 4rem;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+}
+
+/* 800 px  */
+@media (max-width: 800px) {
+  .experience {
+    padding: 0 2rem 4rem;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+}
+
+/* 500 px  */
+@media (max-width: 500px) {
+  .experience {
+    padding: 0 1rem 4rem;
+  }
+}

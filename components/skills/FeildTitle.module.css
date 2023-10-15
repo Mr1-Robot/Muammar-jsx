@@ -1,0 +1,32 @@
+.feildTitle {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+
+  padding: 1.5rem 1rem;
+
+  border: 1px solid var(--black-500);
+  border-radius: 0.2rem;
+
+  text-align: center;
+
+  position: relative;
+}
+.feildTitle::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+
+  width: 0.05rem;
+  height: 2rem;
+
+  background-color: var(--black-500);
+}
+
+.feildTitle h3 {
+  font-weight: 600;
+  color: var(--black-100);
+}

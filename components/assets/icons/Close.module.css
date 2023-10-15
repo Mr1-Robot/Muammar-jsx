@@ -1,0 +1,10 @@
+.close span {
+  display: block;
+
+  width: 1.7rem;
+  height: 0.16rem;
+
+  border-radius: 2rem;
+
+  background-color: var(--black-200);
+}

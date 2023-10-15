@@ -1,0 +1,72 @@
+.card {
+  width: 22rem;
+
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding: 1.5rem;
+
+  border: 0.5px solid var(--black-500);
+  border-radius: 0.75rem;
+
+  cursor: pointer;
+
+  opacity: 0.9;
+
+  transition: border 0.3s ease;
+
+  text-decoration: none;
+}
+
+.card:hover {
+  background: linear-gradient(
+    338deg,
+    rgba(243, 243, 243, 0.12) 0%,
+    rgba(255, 255, 255, 0) 60.45%
+  );
+
+  opacity: 1;
+
+  border: 0.5px solid var(--black-400);
+}
+
+.card figure img {
+  width: 100%;
+  height: 12rem;
+}
+
+.card .content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card .content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 150%;
+
+  color: var(--black-100);
+}
+
+.card .content p {
+  font-size: 1rem;
+  line-height: 150%;
+  color: var(--black-300);
+}
+
+.card .actions button {
+  width: fit-content;
+}
+
+/* MEDIA QUERIES  */
+
+/* 500 px  */
+@media (max-width: 800px) {
+  .card .actions button {
+    width: 100%;
+  }
+}

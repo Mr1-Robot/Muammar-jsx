@@ -1,0 +1,166 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+  gap: 7rem;
+
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  gap: 2rem;
+}
+
+.content header h1 {
+  padding-top: 1rem;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 130%;
+
+  background: linear-gradient(
+    180deg,
+    #f2f2f2 0%,
+    rgba(242, 242, 242, 0) 351.04%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.content ul li {
+  color: var(--black-300);
+
+  font-size: 1rem;
+}
+
+.content .button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content .button button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: none;
+  outline: none;
+  border: 1px solid var(--black-100);
+  border-radius: 9999rem;
+
+  width: 4rem;
+  height: 4rem;
+
+  cursor: pointer;
+
+  transition: background 0.3s ease;
+}
+
+.button button svg,
+.button button svg path {
+  transition: all 0.3s ease;
+}
+.button button:hover {
+  background-color: var(--black-100);
+}
+.button button:hover svg path {
+  fill: #000;
+}
+.button .next:hover svg {
+  transform: translateX(0.1rem);
+}
+.button .prev:hover svg {
+  transform: translateX(-0.1rem);
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.indicator button {
+  width: 4.5rem;
+  height: 0.35rem;
+
+  background-color: var(--blue-200);
+
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+
+  cursor: pointer;
+
+  transition: background 0.3s ease;
+}
+
+.indicator button.active {
+  background-color: var(--blue-500);
+}
+
+.indicator button:hover {
+  background-color: var(--blue-500);
+}
+
+/* MEDIA QUERIES  */
+
+/* 1024 px  */
+@media (max-width: 1024px) {
+  .slider {
+    gap: 4rem;
+  }
+
+  .slider figure img {
+    width: auto;
+    height: 26rem;
+  }
+
+  .content header h1 {
+    font-size: 1.3rem;
+    line-height: 150%;
+  }
+
+  .content ul {
+    gap: 1rem;
+  }
+}
+
+/* 800 px  */
+@media (max-width: 800px) {
+  .slider {
+    gap: 2rem;
+  }
+
+  .content .button button svg {
+    width: 2rem;
+    height: 1.5rem;
+  }
+}
+
+/* 500 px  */
+@media (max-width: 500px) {
+  .slider {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .slider figure {
+    display: none;
+  }
+
+  .slider .indicator {
+    justify-content: center;
+  }
+}

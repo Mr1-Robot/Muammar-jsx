@@ -1,0 +1,107 @@
+.card {
+  width: 26rem;
+  border: 1px solid var(--black-500);
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 1rem;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  transition: border 0.2s ease-out;
+}
+.card:hover {
+  background: linear-gradient(
+    125deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.19) 112.58%
+  );
+
+  border-color: var(--black-400);
+}
+.card img {
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+}
+
+.card .cardContent {
+  padding: 0 1rem 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  line-height: 150%;
+}
+
+.cardContent header {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.cardContent header h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.cardContent header p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--black-300);
+}
+
+.cardContent .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .logos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer button {
+  background-color: var(--black-500);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  padding: 0.3rem 1.5rem;
+
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+
+  transition: background 0.2s ease;
+}
+.card:hover .footer button {
+  background-color: var(--black-100);
+}
+
+.footer button svg,
+.footer button svg path,
+.footer .logos svg path {
+  transition: all 0.2s ease;
+}
+.card:hover .footer button svg {
+  transform: translate(0.2rem, -0.05rem) rotate(20deg);
+}
+.card:hover .footer button svg path {
+  stroke: var(--black-700);
+}
+.card:hover .footer .logos svg path {
+  fill-opacity: 1;
+}
