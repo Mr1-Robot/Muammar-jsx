@@ -44,7 +44,8 @@ const Education = () => {
               src={item.src}
               title={item.title}
               description={item.description}
-              logos={item.logos}
+              logo1={item.logo1}
+              logo2={item.logo2}
             />
           ))}
         </motion.div>

@@ -39,9 +39,10 @@ const EducationCard = (props) => {
 
         <footer className={classes.footer}>
           <div className={classes.logos}>
-            {props.logos.map((item, idx) => (
-              <Fragment key={idx}>{item}</Fragment>
-            ))}
+            <Fragment>
+              {props.logo1}
+              {props.logo2}
+            </Fragment>
           </div>
           <button>
             <LinkArrow />

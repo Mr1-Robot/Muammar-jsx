@@ -21,7 +21,8 @@ export const CARDS_CONTENT = [
     title: "Web Programming - Web50x",
     description:
       "Web Programming with Python and JavaScript made by Harvard University presented by CompuTIQ.",
-    logos: [<HarvardLogo />, <ComputiqLogo />],
+    logo1: <HarvardLogo />,
+    logo2: <ComputiqLogo />,
   },
   {
     id: 1,
@@ -30,7 +31,8 @@ export const CARDS_CONTENT = [
     title: "React JS",
     description:
       "React JS course made by Meta under the part of Meta front-end program on Coursera platform.",
-    logos: [<CourseraLogo />, <MetaLogo />],
+    logo1: <CourseraLogo />,
+    logo2: <MetaLogo />,
   },
   {
     id: 2,
@@ -39,7 +41,8 @@ export const CARDS_CONTENT = [
     title: "JavaScript",
     description:
       "JavaScript course made by Meta under the part of Meta front-end program on Coursera platform.",
-    logos: [<CourseraLogo />, <MetaLogo />],
+    logo1: <CourseraLogo />,
+    logo2: <MetaLogo />,
   },
   {
     id: 3,
@@ -48,7 +51,8 @@ export const CARDS_CONTENT = [
     title: "Version Control",
     description:
       "Github course made by Meta under the part of Meta front-end program on Coursera platform.",
-    logos: [<CourseraLogo />, <MetaLogo />],
+    logo1: <CourseraLogo />,
+    logo2: <MetaLogo />,
   },
   {
     id: 4,
@@ -57,7 +61,8 @@ export const CARDS_CONTENT = [
     title: "Full Stack Web Development",
     description:
       "Full Stack Web Development for beginners with vanilla code “No Frameworks”. Presented by MKnets.",
-    logos: [<MKnetsLogo />],
+    logo1: <MKnetsLogo />,
+    // logo2: "",
   },
   {
     id: 5,
@@ -66,6 +71,7 @@ export const CARDS_CONTENT = [
     title: "Masart Front-End Development",
     description:
       "Front-End Development course presented by Makers of Baghdad under the program of Masart, powered by USAID.",
-    logos: [<MakersLogo />, <USAIDLogo />],
+    logo1: <MakersLogo />,
+    logo2: <USAIDLogo />,
   },
 ];

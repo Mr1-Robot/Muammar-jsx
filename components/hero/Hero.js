@@ -28,7 +28,7 @@ const Hero = () => {
         <div className={classes.content}>
           <header>
             <div className={classes.h3Line} />
-            <h3>Hey, I'm</h3>
+            <h3>Hey, I&apos;m</h3>
             <div className={classes.h3Line} />
             <motion.div
               className={classes.line}
