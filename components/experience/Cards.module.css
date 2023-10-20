@@ -8,7 +8,7 @@
 
   padding: 1.5rem;
 
-  border: 0.5px solid var(--black-500);
+  border: 0.5px solid var(--experience-card);
   border-radius: 0.75rem;
 
   cursor: pointer;
@@ -21,11 +21,7 @@
 }
 
 .card:hover {
-  background: linear-gradient(
-    338deg,
-    rgba(243, 243, 243, 0.12) 0%,
-    rgba(255, 255, 255, 0) 60.45%
-  );
+  background: var(--experience-card-hover);
 
   opacity: 1;
 

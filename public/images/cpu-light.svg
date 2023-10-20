@@ -1,0 +1,30 @@
+<svg width="1060" height="168" viewBox="0 0 1060 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M534 18V27M511.5 49.5H502.5M610.5 49.5H601.5M511.5 72H502.5M610.5 72H601.5M511.5 94.5H502.5M610.5 94.5H601.5M534 117V126M556.5 18V27M556.5 117V126M579 18V27M579 117V126M525 117H588C591.58 117 595.014 115.578 597.546 113.046C600.078 110.514 601.5 107.08 601.5 103.5V40.5C601.5 36.9196 600.078 33.4858 597.546 30.9541C595.014 28.4223 591.58 27 588 27H525C521.42 27 517.986 28.4223 515.454 30.9541C512.922 33.4858 511.5 36.9196 511.5 40.5V103.5C511.5 107.08 512.922 110.514 515.454 113.046C517.986 115.578 521.42 117 525 117ZM529.5 45H583.5V99H529.5V45Z" stroke="url(#paint0_linear_791_4256)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M489.5 72L43.5 72" stroke="#404040" stroke-linecap="round"/>
+<path d="M489.5 95L195.5 95" stroke="#404040" stroke-linecap="round"/>
+<path d="M556.5 167L556.5 132" stroke="#404040" stroke-linecap="round"/>
+<path d="M579.5 150L579.5 132" stroke="#404040" stroke-linecap="round"/>
+<path d="M606.37 150L579.5 150" stroke="#404040" stroke-linecap="round"/>
+<path d="M1007.5 167L1007.5 95" stroke="#404040" stroke-linecap="round"/>
+<path d="M1053.5 52L1053.5 72" stroke="#404040" stroke-linecap="round"/>
+<path d="M535.5 150L535.5 132" stroke="#404040" stroke-linecap="round"/>
+<path d="M508.63 150L535.5 150" stroke="#404040" stroke-linecap="round"/>
+<circle cx="502.5" cy="150" r="5.5" transform="rotate(180 502.5 150)" stroke="#5B5B5B"/>
+<path d="M489.5 49L6.5 49" stroke="#404040" stroke-linecap="round"/>
+<path d="M968.5 49L624.5 49" stroke="#404040" stroke-linecap="round"/>
+<path d="M1053.5 72L624.5 72" stroke="#404040" stroke-linecap="round"/>
+<path d="M1007.5 95L624.5 95" stroke="#404040" stroke-linecap="round"/>
+<path d="M6.5 69L6.5 49" stroke="#404040" stroke-linecap="round"/>
+<circle cx="6.5" cy="75" r="5.5" stroke="#5B5B5B"/>
+<path d="M43.5 167L43.5 72" stroke="#404040" stroke-linecap="round"/>
+<circle cx="189.5" cy="95" r="5.5" stroke="#5B5B5B"/>
+<circle cx="1053.5" cy="46" r="5.5" stroke="#5B5B5B"/>
+<circle cx="974.5" cy="49" r="5.5" stroke="#5B5B5B"/>
+<circle cx="612.5" cy="150" r="5.5" stroke="#5B5B5B"/>
+<defs>
+<linearGradient id="paint0_linear_791_4256" x1="556.5" y1="-0.5" x2="557" y2="171" gradientUnits="userSpaceOnUse">
+<stop/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

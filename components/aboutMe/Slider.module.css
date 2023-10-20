@@ -14,6 +14,10 @@
   gap: 2rem;
 }
 
+.content header svg path {
+  stroke: var(--aboutMe-icon);
+}
+
 .content header h1 {
   padding-top: 1rem;
 
@@ -21,11 +25,7 @@
   font-weight: 500;
   line-height: 130%;
 
-  background: linear-gradient(
-    180deg,
-    #f2f2f2 0%,
-    rgba(242, 242, 242, 0) 351.04%
-  );
+  background: var(--aboutMe-heading);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -56,7 +56,7 @@
 
   background: none;
   outline: none;
-  border: 1px solid var(--black-100);
+  border: 1px solid var(--aboutMe-btn);
   border-radius: 9999rem;
 
   width: 4rem;
@@ -69,13 +69,14 @@
 
 .button button svg,
 .button button svg path {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
+  fill: var(--aboutMe-btn);
 }
 .button button:hover {
-  background-color: var(--black-100);
+  background-color: var(--aboutMe-btn);
 }
 .button button:hover svg path {
-  fill: #000;
+  fill: var(--aboutMe-btn-hover);
 }
 .button .next:hover svg {
   transform: translateX(0.1rem);

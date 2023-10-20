@@ -8,12 +8,21 @@ import PrimaryButton from "../ui/PrimaryButton";
 import SecondaryButton from "../ui/SecondaryButton";
 // Circle Icon
 import Circle from "../assets/icons/Circle";
-// QrCode Image
+// QR Code Image
 import QrCode from "../assets/QrCode";
 // Framer Motion
 import { motion } from "framer-motion";
+// useContext Hook
+import { useContext } from "react";
+// My Context
+import { ModeContext } from "@/context/ThemeContext";
+
+const RESUME =
+  "https://drive.google.com/file/d/1a8xr6bAPP1wvSj-yJRgOT-XP5xaAy9xv/view?usp=drive_link";
 
 const Hero = () => {
+  const ctx = useContext(ModeContext);
+
   return (
     <>
       <section id="home" className={classes.hero}>
@@ -48,16 +57,14 @@ const Hero = () => {
               }}
             />
             <p>
-              I craft on creating <span>Front end web apps</span> |
-              <span> UI/UX Design</span> | <span>Social Media Buying</span>
+              I craft on creating <span>Front end web apps</span>,
+              <span> UI/UX Design</span>, and<span> Social Media Buying</span>
             </p>
 
             <div className={classes.actions}>
               <div className={classes.buttons}>
                 <PrimaryButton link="contact">Contact Me</PrimaryButton>
-                <SecondaryButton link="https://drive.google.com/file/d/1n-DJZjl7JhPPPu4I3x_ZOOtJufBF1JDn/view?usp=drive_link">
-                  See Resume
-                </SecondaryButton>
+                <SecondaryButton link={RESUME}>See Resume</SecondaryButton>
               </div>
 
               <div className={classes.pnpm}>
@@ -82,7 +89,9 @@ const Hero = () => {
             }}
           >
             <Image
-              src="/images/me.svg"
+              src={
+                ctx.mode === "dark" ? "/images/me.svg" : "/images/me-light.svg"
+              }
               alt="Muammar M. Abdullah personal photo."
               width={400}
               height={400}

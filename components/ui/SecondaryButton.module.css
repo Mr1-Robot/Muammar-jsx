@@ -5,7 +5,7 @@
   font-weight: 500;
   text-decoration: none;
 
-  color: var(--black-100);
+  color: var(--hero-btn);
   background-color: transparent;
 
   border: 1px solid var(--black-500);

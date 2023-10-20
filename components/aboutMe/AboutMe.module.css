@@ -1,11 +1,7 @@
 .aboutMe {
   padding: 0 4.5rem 4rem;
 
-  background: linear-gradient(
-    143deg,
-    rgba(255, 255, 255, 0) 25.93%,
-    rgba(243, 243, 243, 0.11) 83.85%
-  );
+  background: var(--section-bg);
   border-bottom: 1px solid var(--black-500);
 }
 

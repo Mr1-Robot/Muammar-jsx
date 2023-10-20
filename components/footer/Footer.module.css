@@ -34,19 +34,19 @@
   gap: 0.5rem;
 
   font-weight: 400;
-  color: var(--black-300);
+  color: var(--footer-anchor);
 
   transition: color 0.2s ease;
 }
 .social a:hover {
-  color: var(--black-100);
+  color: var(--footer-anchor-hover);
 }
 
 .social a svg path {
   transition: fill 0.2s ease;
 }
 .social a:hover svg path {
-  fill: var(--black-100);
+  fill: var(--footer-anchor-hover);
 }
 
 .contact p {

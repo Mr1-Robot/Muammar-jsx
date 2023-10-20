@@ -10,8 +10,16 @@ import Image from "next/image";
 import Feilds from "./Feilds";
 // QR Code Image
 import QrCode from "../assets/QrCode";
+// useContext Hook
+import { useContext } from "react";
+// Mode Context
+import { ModeContext } from "@/context/ThemeContext";
 
 const Skills = () => {
+  const ctx = useContext(ModeContext);
+
+  const src = ctx.mode === "dark" ? "/images/cpu.svg" : "/images/cpu-light.svg";
+
   return (
     <section id="skills" className={classes.skills}>
       <Container>
@@ -23,7 +31,7 @@ const Skills = () => {
         <div className={classes.content}>
           <figure>
             <Image
-              src="/images/cpu.svg"
+              src={src}
               alt="CPU image shows skills section."
               width={500}
               height={200}

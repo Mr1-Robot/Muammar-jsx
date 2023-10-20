@@ -50,6 +50,7 @@
 .cardContent header h3 {
   font-size: 1.3rem;
   font-weight: 600;
+  color: var(--education-cardHeading);
 }
 
 .cardContent header p {
@@ -71,7 +72,7 @@
 }
 
 .footer button {
-  background-color: var(--black-500);
+  background-color: var(--education-cardBtn);
 
   display: flex;
   align-items: center;
@@ -88,7 +89,7 @@
   transition: background 0.2s ease;
 }
 .card:hover .footer button {
-  background-color: var(--black-100);
+  background-color: var(--education-cardBtn-hover);
 }
 
 .footer button svg,
@@ -100,7 +101,7 @@
   transform: translate(0.2rem, -0.05rem) rotate(20deg);
 }
 .card:hover .footer button svg path {
-  stroke: var(--black-700);
+  stroke: var(--education-arrowBtn);
 }
 .card:hover .footer .logos svg path {
   fill-opacity: 1;

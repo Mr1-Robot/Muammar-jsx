@@ -4,7 +4,7 @@
   font-size: 1.1rem;
   font-weight: 500;
   color: var(--black-700);
-  background-color: var(--black-100);
+  background-color: var(--hero-btn);
 
   border-radius: 0.4rem;
   border: none;

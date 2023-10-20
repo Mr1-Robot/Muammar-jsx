@@ -18,12 +18,13 @@ import Work from "@/components/work/Work";
 import Education from "@/components/education/Education";
 // Footer
 import Footer from "@/components/footer/Footer";
+import ThemeContext from "@/context/ThemeContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const Home = () => {
   return (
-    <>
+    <ThemeContext>
       <Head>
         <title>Muammar.jsx</title>
         <meta charSet="UTF-8" />
@@ -50,7 +51,7 @@ const Home = () => {
         <Education />
         <Footer />
       </main>
-    </>
+    </ThemeContext>
   );
 };
 

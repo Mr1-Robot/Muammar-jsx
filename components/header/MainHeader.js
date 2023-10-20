@@ -2,6 +2,8 @@
 import classes from "./MainHeader.module.css";
 // Logo
 import Logo from "../assets/Logo";
+// LogoLight
+import LogoLight from "../assets/LogoLight";
 // Sun Icon
 import Sun from "../assets/icons/Sun";
 // Moon Icon
@@ -21,11 +23,12 @@ import Instagram from "../assets/icons/Instagram";
 // Framer Motion
 import { motion, AnimatePresence } from "framer-motion";
 // useState
-import { useState } from "react";
+import { useContext, useState } from "react";
 // React Scroll
 import { Link } from "react-scroll";
 // El_Messiri Font
 import { El_Messiri } from "next/font/google";
+import { ModeContext } from "@/context/ThemeContext";
 
 const elmessiri = El_Messiri({ subsets: ["latin"] });
 
@@ -135,6 +138,8 @@ const SOCIAL_ARRAY = [
 const MainHeader = () => {
   const [isNav, setIsNav] = useState(false);
 
+  const ctx = useContext(ModeContext);
+
   const currentYear = new Date().getFullYear();
 
   function burgerHandler() {
@@ -151,7 +156,8 @@ const MainHeader = () => {
         className={classes.logo}
         onClick={() => setIsNav(false)}
       >
-        <Logo />
+        {ctx.mode === "dark" && <Logo />}
+        {ctx.mode === "light" && <LogoLight />}
       </Link>
 
       <nav className={classes.nav}>
@@ -175,10 +181,16 @@ const MainHeader = () => {
       </nav>
 
       <div className={classes.theme}>
-        <button>
+        <button
+          onClick={ctx.lightMode}
+          className={ctx.mode === "light" ? classes.active : ""}
+        >
           <Sun />
         </button>
-        <button className={classes.active}>
+        <button
+          onClick={ctx.darkMode}
+          className={ctx.mode === "dark" ? classes.active : ""}
+        >
           <Moon />
         </button>
       </div>
@@ -241,7 +253,20 @@ const MainHeader = () => {
                 ))}
               </motion.li>
             </motion.ul>
-
+            <div className={classes.moboTheme}>
+              <button
+                onClick={ctx.lightMode}
+                className={ctx.mode === "light" ? classes.active : ""}
+              >
+                <Sun />
+              </button>
+              <button
+                onClick={ctx.darkMode}
+                className={ctx.mode === "dark" ? classes.active : ""}
+              >
+                <Moon />
+              </button>
+            </div>
             <motion.p
               className={classes.rights}
               initial={{ opacity: 0, y: 50 }}

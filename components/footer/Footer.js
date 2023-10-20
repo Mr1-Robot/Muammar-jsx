@@ -2,6 +2,8 @@
 import classes from "./Footer.module.css";
 // Logo
 import Logo from "../assets/Logo";
+// Logo Light
+import LogoLight from "../assets/LogoLight";
 // LinkedIn
 import LinkedIn from "../assets/icons/LinkedIn";
 // GitHub
@@ -24,6 +26,10 @@ import { Link } from "react-scroll";
 import { El_Messiri } from "next/font/google";
 // Framer Motion
 import { motion } from "framer-motion";
+// useContext Hook
+import { useContext } from "react";
+// Mode Context
+import { ModeContext } from "@/context/ThemeContext";
 
 const el_messiri = El_Messiri({ subsets: ["latin"] });
 
@@ -94,9 +100,11 @@ const socialVariants = {
 const iconVariants = {
   start: { opacity: 0, y: 50 },
   animate: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } },
+  whileHover: { scale: 1.05 },
 };
 
 const Footer = () => {
+  const ctx = useContext(ModeContext);
   const currentYear = new Date().getFullYear();
 
   return (
@@ -109,7 +117,7 @@ const Footer = () => {
       >
         <motion.div variants={logoVariants}>
           <Link to="home" smooth={true} offset={-200} className={classes.logo}>
-            <Logo />
+            {ctx.mode === "dark" ? <Logo /> : <LogoLight />}
           </Link>
         </motion.div>
 
@@ -120,6 +128,7 @@ const Footer = () => {
               href={item.href}
               target="_blank"
               variants={iconVariants}
+              whileHover="whileHover"
             >
               {item.icon}
               {item.title}

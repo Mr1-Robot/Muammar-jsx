@@ -19,7 +19,7 @@
   height: 8rem;
 
   border-radius: 50%;
-  border: 1px dashed var(--black-500);
+  border: 1px dashed var(--hero-circle);
   border-spacing: 10rem 10rem;
   background-color: transparent;
 
@@ -42,11 +42,7 @@
 }
 
 .content header h3 {
-  background: linear-gradient(
-    181deg,
-    #9f9f9f 1.42%,
-    rgba(159, 159, 159, 0) 144.41%
-  );
+  background: var(--gradient-sub);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -64,7 +60,7 @@
 
   height: 0;
 
-  border-left: 1px dashed var(--black-500);
+  border-left: 1px dashed var(--hero-circle);
 
   position: absolute;
   top: 0;
@@ -78,7 +74,7 @@
 
   height: 0;
 
-  border-right: 1px dashed var(--black-500);
+  border-right: 1px dashed var(--hero-circle);
 
   position: absolute;
   top: 0;
@@ -100,7 +96,7 @@
   font-size: 3rem;
   font-weight: 800;
 
-  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 189.74%);
+  background: var(--gradient-heading);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -113,7 +109,7 @@
   width: 112%;
   height: 2px;
 
-  border-top: 1px dashed var(--black-500);
+  border-top: 1px dashed var(--hero-circle);
 
   position: absolute;
   left: -2.5rem;
@@ -124,7 +120,7 @@
 
   height: 0;
 
-  border-left: 1px dashed var(--black-500);
+  border-left: 1px dashed var(--hero-circle);
 
   position: absolute;
   top: 0;
@@ -138,7 +134,7 @@
 
   height: 0;
 
-  border-right: 1px dashed var(--black-500);
+  border-right: 1px dashed var(--hero-circle);
 
   position: absolute;
   top: 0;
@@ -165,9 +161,8 @@
 }
 
 .content header p span {
-  color: var(--black-100);
+  color: var(--hero-span);
 
-  /* font-size: 1.3rem; */
   font-weight: 500;
 }
 

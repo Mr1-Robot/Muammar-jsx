@@ -41,15 +41,16 @@
 
 .nav ul a:hover,
 .moboNav li a:hover {
-  color: var(--black-100);
+  color: var(--active-nav-item);
 }
 
 .nav ul a.active,
 .moboNav li a.active {
-  color: var(--black-100);
+  color: var(--active-nav-item);
 }
 
-.theme {
+.theme,
+.moboTheme {
   display: flex;
   align-items: center;
   gap: 0.125rem;
@@ -59,7 +60,8 @@
   padding: 0.125rem;
 }
 
-.theme button {
+.theme button,
+.moboTheme button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,29 +80,34 @@
   will-change: background-color;
 }
 
-.theme button:hover {
+.theme button:hover,
+.moboTheme button:hover {
   background-color: var(--black-600);
 }
 
-.theme button.active {
+.theme button.active,
+.moboTheme button.active {
   background-color: var(--black-600);
 }
 
-.theme button svg path {
+.theme button svg path,
+.moboTheme button svg path {
   transition: stroke 0.2s ease;
   will-change: stroke;
 }
 
-.theme button:hover svg path {
-  stroke: var(--black-100);
+.theme button:hover svg path,
+.moboTheme button:hover svg path {
+  stroke: var(--mode-icons);
 }
 
-.theme button.active svg path {
-  stroke: var(--black-100);
+.theme button.active svg path,
+.moboTheme button.active svg path {
+  stroke: var(--mode-icons);
 }
 
 .moboNav {
-  background-color: var(--black-600);
+  background-color: var(--moboNav-background);
   backdrop-filter: saturate(180%) blur(0.25rem);
   display: none;
 
@@ -154,7 +161,11 @@
   transition: fill 0.3s ease;
 }
 .moboNav .socialMedia a:hover svg path {
-  fill: var(--black-100);
+  fill: var(--active-nav-item);
+}
+
+.moboNav .moboTheme {
+  width: fit-content;
 }
 
 .moboNav .rights {

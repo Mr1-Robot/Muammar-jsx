@@ -64,6 +64,7 @@ const Cards = (props) => {
               width={400}
               height={200}
               alt={item.title + " Image."}
+              priority={true}
             />
           </figure>
 

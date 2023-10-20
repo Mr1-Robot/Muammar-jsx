@@ -101,6 +101,7 @@ const Slider = () => {
           width="440"
           height="580"
           alt="Muammar Mohammed Abdullah Personal Photo."
+          priority={true}
         />
       </motion.figure>
       <div className={classes.content}>
