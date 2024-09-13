@@ -42,10 +42,15 @@ import Budgeting from "../assets/icons/Budgeting";
 import AdFormats from "../assets/icons/AdFormats";
 // AdSchedule Icon
 import AdSchedule from "../assets/icons/AdSchedule";
+// NodeJS Icon
+import NodeJS from "../assets/icons/NodeJS";
+// MongoDB
+import MongoDB from "../assets/icons/MongoDB";
+
 export const roleData = [
   {
     id: 0,
-    title: "Front-End Development",
+    title: "Web Development",
     cards: [
       {
         id: 0,
@@ -97,6 +102,18 @@ export const roleData = [
       },
       {
         id: 8,
+        title: "NodeJS & Express",
+        level: "Beginner Level",
+        icon: <NodeJS />,
+      },
+      {
+        id: 9,
+        title: "MongoDB & Mongoose",
+        level: "Beginner Level",
+        icon: <MongoDB />,
+      },
+      {
+        id: 10,
         title: "GitHub",
         level: "Intermediate Level.",
         icon: <Git />,

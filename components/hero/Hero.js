@@ -89,9 +89,7 @@ const Hero = () => {
             }}
           >
             <Image
-              src={
-                ctx.mode === "dark" ? "/images/me.svg" : "/images/me-light.svg"
-              }
+              src="/images/me-0.svg"
               alt="Muammar M. Abdullah personal photo."
               width={400}
               height={400}

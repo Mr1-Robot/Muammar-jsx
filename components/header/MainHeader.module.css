@@ -117,7 +117,7 @@
   width: 100%;
   height: 100vh;
 
-  padding: 0 2rem;
+  padding: 0 2rem 2rem 2rem;
 
   transform-origin: top;
 }
@@ -223,7 +223,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .burger {
@@ -239,6 +239,6 @@
   }
 
   .moboNav {
-    padding: 0 1rem;
+    padding: 0 1rem 5rem 1rem;
   }
 }
