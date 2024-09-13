@@ -23,11 +23,11 @@ const CONTENT = [
     image: "/images/me-0.svg",
     icon: <Message />,
     title:
-      "I am Muammar Mohammed Abdullah, a Senior Computer Science - Information System Student.",
+      "I am Muammar Mohammed Abdullah, a Computer Science - Information System Graduate.",
     list: [
       "- University of Technology",
       "- Computer Science - Information System",
-      "- Fourth Stage",
+      "- 2020 - 2024 Graduate",
     ],
   },
 
@@ -50,7 +50,7 @@ const CONTENT = [
     icon: <Buzzle />,
     title:
       "At the age of 22, I am committed to continuous learning and growth in the ever-evolving landscape of technology and design.",
-    list: ["- Age 22 yrs", "- Learning", "- Technologies & Design"],
+    list: ["- Age 23 yrs", "- Learning", "- Technologies & Design"],
   },
 ];
 
