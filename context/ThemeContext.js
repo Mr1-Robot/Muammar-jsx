@@ -1,4 +1,3 @@
-// useState
 import { useState } from "react";
 // createContext
 import { createContext } from "react";

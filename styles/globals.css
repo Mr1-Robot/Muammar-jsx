@@ -155,12 +155,29 @@
   background: var(--black-100);
 }
 
+::-webkit-scrollbar-thumb {
+  background-color: #3d3d3d;
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-track {
+  background-color: #222222;
+}
+
+::-webkit-scrollbar {
+  background-color: #3d3d3d;
+  width: 0.8rem;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 
   transition: background 0.3s ease;
+}
+
+section {
+  overflow: hidden;
 }
 
 html,
