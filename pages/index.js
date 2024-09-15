@@ -34,7 +34,7 @@ const Home = () => {
         />
         <meta
           name="keywords"
-          content="Muammar M. Abdullah, Front-End Development, UI/UX Design, Social Media Buying, University of Technology, mo3mer1, Mr1-Robot"
+          content="Muammar M. Abdullah, Front-End Development, UI/UX Design, Social Media Buying, University of Technology, Muammar.jsx, Mr1-Robot, MERN, ReactJS, NextJS, NodeJS"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Muammar.jsx" />
